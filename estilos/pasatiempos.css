@@ -1,0 +1,29 @@
+
+body{
+	background-color: aqua;
+}
+
+
+#titulo{
+	text-align: center;
+	color: purple;
+	background-color: red;
+
+	border:dashed 3px #6b19e6;
+	border-radius: 32px;
+	}
+
+h1{
+	background-color: red;
+	color: purple;
+	text-align: center;
+}
+
+h3{
+	background-color: #8000FF;
+	width: 800px ;
+	height: 100px;
+	text-align: center;
+	margin: 0px 0px 0px 350px;
+
+

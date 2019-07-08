@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="../estilos/curp.css">
+</head>
+<body>
+<center>
+	<h1>Genera HTML</h1>
+	<script type="text/javascript">
+		document.write("<p><b>imprimiendo un letrero en javascript</b></p><br>");
+
+		document.write("<b>Fecha => </b>" +(new Date()));
+
+		var pelicula = {titulo:'Avengers', director:'george lucas',genero:'Ciencia Ficción'}
+
+		document.write("<p><b>Pelicula=> </b>"+pelicula.titulo+"</p>");
+		document.write("<p><b>Director=> </b>"+pelicula['director']+"</p>");
+	</script>
+
+	<pre>
+		<h2>Texto preformateado</h2>
+		<script>
+			document.writeln();
+			document.writeln("Nombre: "+pelicula.titulo);
+			document.writeln("Director: "+pelicula['director']);
+			document.writeln("Genero: "+pelicula.genero)
+
+		</script>	
+		<h2>String: array de caracteres</h2>
+		<script>
+			var cadena = "Carlos Reyes";
+			document.writeln();
+			document.writeln("cadena "+cadena);
+			document.writeln("Tamaño de la cadena "+cadena.length);
+			document.writeln("Posicion de la letra s " +cadena.indexOf('s'));
+			document.writeln("Obteniendo una subcadena "+cadena.substring(5,9));
+			document.writeln("Obtener la letra s:" +cadena[3]);
+
+
+		</script>
+		<h2>Datos de CURP</h2>
+		<script>	
+
+			var curp="RERC960222HPLYVR05";
+			var mes=curp.substring(6,8);
+			var mesletra;
+
+			var genero=curp.substring(10,11);
+			var generoletra;
+
+			var estado=curp.substring(11,13)
+			var estadoletra;
+
+			if(mes==01){
+				mesletra="Enero";
+			}
+			else if(mes==02){
+				mesletra="Febrero";
+			}
+			else if(mes==03){
+				mesletra="Marzo";
+			}
+
+			else if(mes==04){
+				mesletra="Abril";
+			}
+			
+			else if(mes==05){
+				mesletra="Mayo";
+			}
+			
+			else if(mes==06){
+				mesletra="Junio";
+			}
+
+			else if(mes==07){
+				mesletra="Julio";
+			}
+
+			else if(mes==08){
+				mesletra="Agosto";
+			}
+
+			else if(mes==09){
+				mesletra="Septiembre";
+			}
+
+			else if(mes==10){
+				mesletra="Octubre";
+			}
+
+			else if(mes==11){
+				mesletra="Noviembre";
+			}
+
+			else if (mes==12){
+				mesletra="Diciembre";
+			}
+
+			switch (genero) {
+ 
+       		   case "H":
+               generoletra="Masculino";
+               break;
+           
+		       case "M":
+               generoletra="Femenino";
+               break;
+
+               case "G":
+               generoletra="Guey";
+               brak;
+           }
+        		
+			switch (estado) {
+ 
+       		   case "PL":
+               estadoletra="Puebla";
+               break;
+
+               case "VZ":
+               estadoletra="Verecruz";
+               break;
+
+               case "MX":
+               estadoletra="Mexico";
+               break;
+           
+		       
+           }
+       		document.writeln();
+        	document.writeln("CURP: "+curp);
+			document.writeln("RFC: "+curp.substring(0,10));
+			document.writeln("Fecha de nacimiento ");
+			document.writeln("<b>Año:</b> "+curp.substring(4,6));
+			document.writeln("<b>Mes:</b> "+mesletra);
+			document.writeln("<b>Dia:</b> "+curp.substring(8,10));
+			document.writeln("Genero: "+ generoletra);
+			document.writeln("Estado : "+estadoletra);
+
+		</script>
+	</pre>
+</center>
+</body>
+</html>	

@@ -1,0 +1,47 @@
+
+body{
+	background-color: aqua;
+}
+div.galeria{
+    margin: 15px;
+    border: 1px solid black;
+    float: left;
+    width: 200px;
+    color: purple;
+    text-align: center;
+}
+
+div.galeria:hover {
+    border: 1px solid  #0C0CDF;
+}
+
+div.galeria img {
+    width: 100%;
+    height: auto;
+}
+
+img{
+	width: 30%; 
+	height: 80%;
+
+}
+
+#gallery{
+	padding: 30px  85px ;
+}
+
+#uefa{
+	background-color: #08C4FB;
+}
+
+#texto{
+	text-align: center;
+	color: purple;
+	background-color: red;
+
+	border:dashed 3px #6b19e6;
+	border-radius: 32px;
+	}
+
+
+

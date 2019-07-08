@@ -1,0 +1,40 @@
+
+body{
+    background-color:#FFAE00;
+}
+
+table {
+    
+    width: 100%;
+    
+    border-spacing: 5px 2px;
+}
+
+th {
+    text-align: center;
+    padding: 2px;
+    font-style: italic;
+    font-family: Arial:Arial,Times;
+}
+
+td {
+    text-align: center;
+    padding: 2px;
+    vertical-align: bottom;
+    font-size: 10pt;
+
+}
+
+tr {
+    background-color: #4CAF50;
+    font-size: 20pt;
+
+}
+ h2 {
+ 	text-align: center;
+ 	background-color: #1704FB;
+ 	font-size: 22pt;
+ 	color: white;
+ }
+
+  

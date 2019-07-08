@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DOM</title>
+	<meta charset="utf-8">
+	<link href="../estilos/windows.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+<h2>Screen</h2>
+<table id="tabla">
+<tr><th> Propiedad </th><th> Valor </th></tr>
+</table>
+
+<h2>History</h2>
+<table id="tabla2">
+<tr><th> Propiedad </th><th> Valor </th></tr>
+</table>
+
+<h2>Document</h2>
+<table id="tabla4">
+<tr><th> Propiedad </th><th> Valor </th></tr>
+</table>
+
+<h2>Location</h2>
+<table id="tabla1">
+<tr><th> Propiedad </th><th> Valor </th></tr>
+</table>
+
+<h2>Navigator</h2>
+<table id="tabla3">
+<tr><th> Propiedad </th><th> Valor </th></tr>
+</table>
+
+
+<script>
+	var i, tabla = document.getElementById("tabla");
+	for (i in screen){
+		tabla.innerHTML+="<tr><td>"+i+"</td><td> = "+screen[i]+"</td></tr>";
+	}
+
+	var r, tabla2 = document.getElementById("tabla2");
+	for (r in history){
+		tabla2.innerHTML+="<tr><td>"+r+"</td><td> = "+history[r]+"</td></tr>";
+	}
+
+	var l, tabla4 = document.getElementById("tabla4");
+	for (l in Document){
+		tabla4.innerHTML+="<tr><td>"+a+"</td><td> = "+Document[l]+"</td></tr>";
+	}
+
+	var c, tabla1 = document.getElementById("tabla1");
+	for (c in location){
+		tabla1.innerHTML+="<tr><td>"+c+"</td><td> = "+location[c]+"</td></tr>";
+	}
+
+	var a, tabla3 = document.getElementById("tabla3");
+	for (a in navigator){
+		tabla3.innerHTML+="<tr><td>"+a+"</td><td> = "+navigator[a]+"</td></tr>";
+	}
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+        
+
+ body{        
+  background-color: aqua;
+ }
+
+  h1 {
+    padding: 10px;
+    font-weight: 700;
+    font-size: 20px;
+    color:black;
+    background-color:orange;
+    border-radius: 15px;
+    border: 2px solid #0016b0;
+  }
+
+
+  input {
+ 
+  padding: 3px;
+    font-weight: 400;
+    font-size: 20px;
+    border: 3px solid #0016b0;
+  }
+
+
+button {
+    padding: 10px;
+    font-weight: 700;
+    font-size: 20px;
+    color: white;
+    background-color:red;
+    border-radius: 15px;
+    border: 2px solid #0016b0;
+  }
+  button:hover {
+    color:purple;
+    background-color: yellow;
+  }
+
+   

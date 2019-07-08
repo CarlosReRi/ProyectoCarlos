@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+       <head>
+       	<meta charset="utf-8">
+        </head>
+        <body>
+
+        <body bgcolor="#AED6F1  ">
+
+        <style type="text/css">
+          h1 {
+            color: #1704FB;
+            text-align: center;
+            font-family: "arial";
+          }
+
+
+        </style>
+        	<h1>Adivina un número</h1>
+          <hr size="10px" color="red" width="80%" align="center" >
+
+            <div id="num" style="text-align: center">
+         <script type="text/javascript">
+           
+          
+          var cr = 0;
+          while (cr < 3){
+          var aleatorio = Math.round(Math.random() * (10 - 1) + 1);
+          var respuesta = prompt("Hola Adivina un Numero");
+          
+          
+          if (respuesta === ""){
+          document.writeln("El campo no puede ir vacio");
+          document.writeln("<br>")
+          document.writeln("<br>")
+          
+          }
+          else if (isNaN(respuesta)){
+            document.writeln("Tu respuesta no es un número");
+            document.writeln("<br>");
+            document.writeln("<br>")
+
+          }else {
+
+          if(aleatorio == respuesta){
+         document.writeln ('<img src="correcto.png"/>');
+         document.writeln("<br>"); 
+         document.writeln("Tú número fue: " + aleatorio)
+             break;
+
+          }else{
+            document.writeln ('<img src="incorrecto.png"/>');
+            document.writeln("<br>");
+            document.writeln("El número fue: " + aleatorio)
+            document.writeln("<br>");
+          cr++;
+          } 
+          }
+          
+        }
+
+          var respuesta = confirm("¿Fin del juego, ¿Quiere volver a jugar");
+
+            if(respuesta === false){
+           
+             }else{
+              location.reload();
+              
+            }
+
+         	</script>
+          </div>
+           </body>
+        </html>

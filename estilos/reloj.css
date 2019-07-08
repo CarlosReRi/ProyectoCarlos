@@ -1,0 +1,73 @@
+	
+
+	body{
+	 background-color:aqua;
+	}
+ 
+
+ h1 {
+    padding: 10px;
+    font-weight: 800;
+    font-size: 30px;
+    color:indigo;
+    background-color:orange;
+    border-radius: 15px;
+    border: 2px solid #0016b0;
+    text-align: center;
+
+  }
+
+    .numero{
+    stroke:#0AEAA6; 
+    stroke-width:1.5;
+  }
+
+  	.numeros{
+  	stroke:#212F3D; 
+		stroke-width:.9;
+  	
+    }
+
+
+  	#textohora{
+           
+        text-align: center;
+        margin: 3%;  
+        border-color: red;
+      color: red;
+      font-family: sans-serif;
+      font-size: 3em;
+      font-weight: bold;
+      text-align: center;
+      border:solid 10px #5499C7;
+      background-color:purple;
+        border:dashed 3px black;
+        border-radius: 75px;
+        box-shadow: -10px -11px 18px #000000;
+
+
+  
+  	}
+
+
+	#circulo {
+	stroke:red; 
+	stroke-width:2;
+	fill:dodgerblue;
+		} 
+
+	#horas {
+		stroke:black; 
+		stroke-width:2;
+	}
+	
+	#minutos{
+	stroke:black; 
+	stroke-width:2;
+	}
+
+	#segundos{
+	stroke:red; 
+	stroke-width:1;
+	
+}

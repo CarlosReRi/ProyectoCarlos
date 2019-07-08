@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Entradas y salidas</title>
+	<meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="../estilos/adivinajuego.css">
+
+    <script>
+
+      function validarRespuesta(){
+      var co = document.getElementById('co');
+      var resultado = document.getElementById('resultado');
+      var respuesta = resultado.value;
+        
+          if (respuesta === ""){
+          co.innerHTML = ("El campo no puede ir vacio");
+          co.style.color = ("red");
+
+        
+          }
+          else if (isNaN(resultado.value)){
+        
+          if  (respuesta.toLowerCase() === "arrive"){
+          co.innerHTML = ('<img src="palomita1.png"/>');
+          
+          }else{
+          co.innerHTML = ('<img src="tache.png"/>');
+            
+          }
+          }else{
+          co.innerHTML =  ("Tus carácteres son incorrectos");
+          co.style.color = ("red");
+          resultado.value = ("");
+              
+      }
+  }
+
+   </script>	   
+</head>
+    <CENTER>
+    <body>
+
+	<h1>¿Escribir LLEGAR en ingles</h1>
+  <br>
+  		
+  		 <br> 
+  		 <input type="text"  id="resultado" placeholder="Escribe tu respuesta aqui"> 
+  		 <br><br>
+  	   <button type="button"  onclick="validarRespuesta()">CONSULTAR</button>
+       <p id="co" style="font-size: 35px" ></p>
+         
+       </CENTER>  
+
+      
+</body>
+</html>
